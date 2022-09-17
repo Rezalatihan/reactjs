@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import reportWebVitals from './reportWebVitals';
-import Indexportfolio from './tugas/portfolio/Indexportfolio';
+// import Indexportfolio from './tugas/portfolio/Indexportfolio';
+import Iindex from './latihan/component/reusable';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Indexportfolio />
+    <Iindex />
+
   </React.StrictMode>
 );
 
