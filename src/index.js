@@ -4,12 +4,14 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import reportWebVitals from './reportWebVitals';
 // import Indexportfolio from './tugas/portfolio/Indexportfolio';
-import Iindex from './latihan/component/reusable';
+// import Iindex from './latihan/component/reusable';
+// import Formvalidator from './latihan/formAndValidator/Formvalidator';
+import Forminput from './tugas/forms/Forminput';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Iindex />
+    <Forminput />
 
   </React.StrictMode>
 );
