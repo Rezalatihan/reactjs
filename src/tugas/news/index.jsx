@@ -11,7 +11,7 @@ class Index extends Component {
   };
 
   componentDidMount() {
-    axios.get(`https://newsapi.org/v2/top-headlines?country=id&apiKey=879a5c8344cb4ee5b90ece64f360824f`).then((res) => {
+    axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=879a5c8344cb4ee5b90ece64f360824f`).then((res) => {
       const setData = res.data.articles;
       this.setState({ setData });
     });
@@ -40,8 +40,8 @@ class Index extends Component {
         <Form.Control className="me-auto mb-3" placeholder="Add your Berita here..." onChange={this.onchang} />
         <Row md={1}>
           {setData &&
-            searchData.map((person) => (
-              <Col style={{ width: "24.5%", border: "1px solid", margin: "3px" }} key={person.description}>
+            searchData.map((person, index) => (
+              <Col style={{ width: "24.5%", border: "1px solid", margin: "3px" }} key={index}>
                 <img src={person.urlToImage} className="top" style={{ width: "100%" }} alt="img"></img>
                 <h4 className="card-title">{person.title}</h4>
                 <h6>
