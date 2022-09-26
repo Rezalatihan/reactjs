@@ -3,7 +3,6 @@ import axios from "axios";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Tampilan from "./Tampilan";
 
 class Index extends Component {
   state = {
@@ -15,9 +14,6 @@ class Index extends Component {
     axios.get(`https://newsapi.org/v2/top-headlines?country=id&apiKey=879a5c8344cb4ee5b90ece64f360824f`).then((res) => {
       const setData = res.data.articles;
       this.setState({ setData });
-      // console.log(setData);
-      // const searchData = res.data.articles;
-      // this.setState({ searchData });
     });
   }
   catch(error) {
@@ -26,7 +22,6 @@ class Index extends Component {
 
   onchang = (e) => {
     const { setData } = this.state;
-    // const { searchData } = this.state;
     let resultArray = [];
     for (let i = 0; i < setData.length; i++) {
       if (setData[i].title.includes(e.target.value)) {
