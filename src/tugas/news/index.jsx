@@ -40,7 +40,7 @@ class Index extends Component {
         <Form.Control className="me-auto mb-3" placeholder="Add your Berita here..." onChange={this.onchang} />
         <Row md={1}>
           {setData &&
-            searchData.map((person, index) => (
+            searchData.map((person) => (
               <Col style={{ width: "24.5%", border: "1px solid", margin: "3px" }} key={person.description}>
                 <img src={person.urlToImage} className="top" style={{ width: "100%" }} alt="img"></img>
                 <h4 className="card-title">{person.title}</h4>
