@@ -11,7 +11,7 @@ class Index extends Component {
   };
 
   componentDidMount() {
-    axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=879a5c8344cb4ee5b90ece64f360824f`).then((res) => {
+    axios.get(`https://newsapi.org/v2/top-headlines?country=id&apiKey=879a5c8344cb4ee5b90ece64f360824f`).then((res) => {
       const setData = res.data.articles;
       this.setState({ setData });
       const searchData = res.data.articles;
@@ -23,8 +23,8 @@ class Index extends Component {
   }
 
   onchang = (e) => {
-    const { setData } = this.state;
     let resultArray = [];
+    const { setData } = this.state;
     for (let i = 0; i < setData.length; i++) {
       if (setData[i].title.includes(e.target.value)) {
         resultArray.push(setData[i]);
