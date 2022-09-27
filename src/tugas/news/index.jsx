@@ -14,6 +14,8 @@ class Index extends Component {
     axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=879a5c8344cb4ee5b90ece64f360824f`).then((res) => {
       const setData = res.data.articles;
       this.setState({ setData });
+      const searchData = res.data.articles;
+      this.setState({ searchData });
     });
   }
   catch(error) {
@@ -26,14 +28,13 @@ class Index extends Component {
     for (let i = 0; i < setData.length; i++) {
       if (setData[i].title.includes(e.target.value)) {
         resultArray.push(setData[i]);
-        console.log(setData[i]);
       }
     }
     this.setState({ searchData: resultArray });
   };
 
   render() {
-    const { searchData, setData } = this.state;
+    const { setData, searchData } = this.state;
     return (
       <div className="card p-5">
         <h1 className="text-center">List Berita</h1>
