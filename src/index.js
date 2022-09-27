@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import reportWebVitals from './reportWebVitals';
-import Index from './tugas/funtcomp/Index';
+// import Index from './tugas/funtcomp/Index';
 // import Indexportfolio from './tugas/portfolio/Indexportfolio';
 // import Iindex from './latihan/component/reusable';
 // import Formvalidator from './latihan/formAndValidator/Formvalidator';
 // import Forminput from './tugas/forms/Forminput';
+import Index from './tugas/routing/index';
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

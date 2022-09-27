@@ -41,9 +41,9 @@ export default class Forminput extends Component {
   render() {
     const style = {
       with: "400px",
-      margin: "100px auto 0",
+      margin: "200px auto",
       border: "1px solid",
-      padding: "10px",
+      padding: "50px",
     };
 
     const { email, password, error } = this.state;
@@ -61,13 +61,15 @@ export default class Forminput extends Component {
         <form onSubmit={this.onSubmit}>
           <label>Email :</label>
           <br />
-          <input type="email" name="email" value={email} onChange={this.onChange} />
+          <input type="email" name="email" value={email} onChange={this.onChange} style={{ width: "100%" }} />
           <br />
           <label>Password :</label>
           <br />
-          <input type="password" name="password" value={password} onChange={this.onChange} />
+          <input type="password" name="password" value={password} onChange={this.onChange} style={{ width: "100%" }} />
           <br />
-          <button type="submit">Kirim</button>
+          <button type="submit" style={{ width: "20%", backgroundColor: "green", color: "white", border: "1px green", margin: "10px 40% 0" }}>
+            Kirim
+          </button>
         </form>
       </div>
     );

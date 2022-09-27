@@ -1,0 +1,15 @@
+.me-auto {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.me-auto a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: antiquewhite;
+}
+
+.me-auto a:hover {
+  color: aqua;
+}
