@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 // import Iindex from './latihan/component/reusable';
 // import Formvalidator from './latihan/formAndValidator/Formvalidator';
 // import Forminput from './tugas/forms/Forminput';
-import Index from './tugas/routing/index';
+import Index from './tugas/Redux/index';
 
 
 
