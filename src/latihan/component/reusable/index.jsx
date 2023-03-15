@@ -1,11 +1,10 @@
-import Index from "./bar/Index";
-import Keranjang from "./Keranjang";
-import React, { Component } from "react";
+import Index from './bar/Index';
+import Keranjang from './Keranjang';
+import React, { Component } from 'react';
 class Iindex extends Component {
   state = {
     value: 0,
   };
-
   handeValue = (data) => {
     // console.log(data);
     this.setState({
